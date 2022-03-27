@@ -17,7 +17,7 @@ public class BeanConfig {
 
     @Bean
     InnerBean innerBean() {
-        log.info("innerBean Class name: {}" + BeanConfig.class.getName());
+        log.info("innerBean Class name: {}", BeanConfig.class.getName());
         return new InnerBean();
     }
 }

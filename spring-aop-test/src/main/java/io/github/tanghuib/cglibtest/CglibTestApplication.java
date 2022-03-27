@@ -15,8 +15,8 @@ public class CglibTestApplication {
 
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(CglibTestApplication.class, args);
 		InnerBean testBean = applicationContext.getBean(InnerBean.class);
-		String zhangsan = testBean.sayHello("zhangsan");
-		log.info("result: {}", zhangsan);
+		String result = testBean.sayHello("zhangsan");
+		log.info("result: {}", result);
 	}
 
 

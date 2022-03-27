@@ -17,14 +17,9 @@ public class InnerBean {
 
     public InnerBean() {
         log.info("className: {}, InnerBean uuid: {}", this.getClass().getName(), uuid);
-
     }
 
     public String sayHello(String name) {
         return uuid + " hello:" + name;
-    }
-
-    public void echo(Object data) {
-        System.out.println("hello:" + data);
     }
 }
